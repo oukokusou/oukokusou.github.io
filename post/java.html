@@ -5,10 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="动力节点, 编程">
-    <meta name="description" content="1、计算机结构：计算机包括：
+    <meta name="description" content="[TOC]
+1、计算机结构：计算机包括：
     * 硬件
         - CPU：中央处理器，负责计算机的核心运算，它是计算机的最核心部件，指挥官。 1 + 1 = 2
-        - 内存：临时存储区域，程序在运行的过程当中，一些数据的临时">
+        - 内存：临时存储区域，程序在运行的过程当中，一">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -380,8 +381,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Java%E5%9F%BA%E7%A1%801/" class="post-category">
-                                Java基础1
+                            <a href="/categories/Java%E5%9F%BA%E7%A1%80/" class="post-category">
+                                Java基础
                             </a>
                         
                     </div>
@@ -417,7 +418,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1、计算机结构："><a href="#1、计算机结构：" class="headerlink" title="1、计算机结构："></a>1、计算机结构：</h2><pre><code>计算机包括：
+                <p>[TOC]</p>
+<h2 id="1、计算机结构："><a href="#1、计算机结构：" class="headerlink" title="1、计算机结构："></a>1、计算机结构：</h2><pre><code>计算机包括：
     * 硬件
         - CPU：中央处理器，负责计算机的核心运算，它是计算机的最核心部件，指挥官。 1 + 1 = 2
         - 内存：临时存储区域，程序在运行的过程当中，一些数据的临时存储区域。
@@ -1730,12 +1732,8 @@ public class VarTest01{
         // 之后的结果是30，那么这个30也会在内存当中找一块临时的空间存储起来。
         // 思考：以下的三个10在内存当中是一块空间，还是三块不同的空间呢？
 </code></pre>
-<p>​			<br>​			// 以下虽然都是10，但是这3个10占用三块不同的内存空间。<br>​			System.out.println(10);<br>​			System.out.println(10);<br>​			System.out.println(10); // 只有“字面量”机制的话，是远远不够的，因为只有字面量内存是无法重复利用的。<br>​	<br>​			// 定义/声明一个变量，起名i<br>​			int i = 1000;<br>​			// 以下这5次访问都是访问的同一块内存空间。（这样使用变量之后，内存空间就得到了复用。）<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​	<br>​			// 以下程序表示访问的是字符i以及字符串i，以下的这两个i和以上的i变量没有任何关系。<br>​			System.out.println(‘i’);<br>​			System.out.println(“i”);<br>​	<br>​		}<br>​	<br>​	}<br>​	<br>​	文档注释<br>​	/**<br>​	* 变量测试类2<br>​	* @author 杜聚宾<br>​	* @version 1.5<br>​	* @since 1.0<br>​	<em>/<br>​	/</em><br>​		什么是变量？<br>​			变量其实就是内存当中存储数据的最基本的单元。<br>​			变量就是一个存储数据的盒子。<br>​	<br>​		在java语言当中任何数据都是有数据类型的，其中整数型是：int<br>​			没有为什么，java中规定的，整数型就是：int<br>​		<br>​		当然，在java中除了数据类型int之外，还有其它的类型，例如带小数的：double等。。。<br>​	<br>​		数据类型有什么用呢？<br>​			记住：不同的数据类型，在内存中分配的空间大小不同。<br>​			也就是说，Java虚拟机到底给这个数据分配多大的空间，主要还是看这个变量的数据类型。<br>​			根据不同的类型，分配不同大小的空间。<br>​		<br>        对于int这种整数类型，JVM会自动给int分配4个字节大小的空间。</p>
-<pre><code>    1个字节=8个比特位
-    1个比特位就是一个1或0. 注意：比特位是二进制位。
-    int是占用多少个二进制位？1个int占有32个二进制位（bit位）
-
-    int i = 1; 实际上在内存中是这样表示的：
+<p>​			<br>​			// 以下虽然都是10，但是这3个10占用三块不同的内存空间。<br>​			System.out.println(10);<br>​			System.out.println(10);<br>​			System.out.println(10); // 只有“字面量”机制的话，是远远不够的，因为只有字面量内存是无法重复利用的。<br>​	<br>​			// 定义/声明一个变量，起名i<br>​			int i = 1000;<br>​			// 以下这5次访问都是访问的同一块内存空间。（这样使用变量之后，内存空间就得到了复用。）<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​	<br>​			// 以下程序表示访问的是字符i以及字符串i，以下的这两个i和以上的i变量没有任何关系。<br>​			System.out.println(‘i’);<br>​			System.out.println(“i”);<br>​	<br>​		}<br>​	<br>​	}<br>​	<br>​	文档注释<br>​	/**<br>​	* 变量测试类2<br>​	* @author 杜聚宾<br>​	* @version 1.5<br>​	* @since 1.0<br>​	<em>/<br>​	/</em><br>​		什么是变量？<br>​			变量其实就是内存当中存储数据的最基本的单元。<br>​			变量就是一个存储数据的盒子。<br>​	<br>​		在java语言当中任何数据都是有数据类型的，其中整数型是：int<br>​			没有为什么，java中规定的，整数型就是：int<br>​		<br>​		当然，在java中除了数据类型int之外，还有其它的类型，例如带小数的：double等。。。<br>​	<br>​		数据类型有什么用呢？<br>​			记住：不同的数据类型，在内存中分配的空间大小不同。<br>​			也就是说，Java虚拟机到底给这个数据分配多大的空间，主要还是看这个变量的数据类型。<br>​			根据不同的类型，分配不同大小的空间。<br>​		<br>​		对于int这种整数类型，JVM会自动给int分配4个字节大小的空间。<br>​	<br>        1个字节=8个比特位<br>        1个比特位就是一个1或0. 注意：比特位是二进制位。<br>        int是占用多少个二进制位？1个int占有32个二进制位（bit位）</p>
+<pre><code>    int i = 1; 实际上在内存中是这样表示的：
         00000000 00000000 00000000 00000001
     int i = 2;
         00000000 00000000 00000000 00000010
@@ -15964,13 +15962,13 @@ Array
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/htmlcss-xue-xi.html">
+                <a href="/post/18java8-xin-te-xing.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="html">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="18Java8新特性">
                         
-                        <span class="card-title">html</span>
+                        <span class="card-title">18Java8新特性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -15987,8 +15985,8 @@ Array
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/html%EF%BC%8Ccss/" class="post-category">
-                                    html，css
+                            <a href="/categories/Java%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    Java基础
                                 </a>
                             
                             
@@ -15998,8 +15996,8 @@ Array
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                        <span class="chip bg-color">前端</span>
+                    <a href="/tags/JavaEE/">
+                        <span class="chip bg-color">JavaEE</span>
                     </a>
                     
                 </div>
@@ -16036,8 +16034,8 @@ Array
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java%E5%9F%BA%E7%A1%801/" class="post-category">
-                                    Java基础1
+                            <a href="/categories/Java%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    Java基础
                                 </a>
                             
                             
