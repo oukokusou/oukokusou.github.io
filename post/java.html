@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>动力节点 | 编程</title>
+  <title>java基础知识02 | 编程</title>
   <meta name="keywords" content=" JavaEE ">
-  <meta name="description" content="动力节点 | 编程">
+  <meta name="description" content="java基础知识02 | 编程">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -370,7 +370,7 @@
            href="/post/java.html"
            data-tag="JavaEE"
            data-author="" >
-            <span class="post-title" title="动力节点">动力节点</span>
+            <span class="post-title" title="java基础知识02">java基础知识02</span>
             <span class="post-date" title="2020-07-27 00:00:00">2020/07/27</span>
         </a>
         
@@ -379,7 +379,7 @@
            href="/post/java-yu-yan-ji-chu-1.html"
            data-tag="JavaEE"
            data-author="" >
-            <span class="post-title" title="01Java语言概述">01Java语言概述</span>
+            <span class="post-title" title="Java语言概述01">Java语言概述01</span>
             <span class="post-date" title="2020-07-27 00:00:00">2020/07/27</span>
         </a>
         
@@ -403,7 +403,7 @@
     <div class="pjax">
         <article id="post-java" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">动力节点</h1>
+        <h1 class="article-title">java基础知识02</h1>
     
     <div class="article-meta">
         
@@ -428,7 +428,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2022-11-29 04:35:16'>2020-07-27 00:00</time>
+            发布时间 : <time class="date" title='最后更新: 2022-11-29 21:13:17'>2020-07-27 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -1780,13 +1780,8 @@ public class VarTest01{
         // 之后的结果是30，那么这个30也会在内存当中找一块临时的空间存储起来。
         // 思考：以下的三个10在内存当中是一块空间，还是三块不同的空间呢？
 </code></pre>
-<p>​			<br>​			// 以下虽然都是10，但是这3个10占用三块不同的内存空间。<br>​			System.out.println(10);<br>​			System.out.println(10);<br>​			System.out.println(10); // 只有“字面量”机制的话，是远远不够的，因为只有字面量内存是无法重复利用的。<br>​	<br>​			// 定义/声明一个变量，起名i<br>​			int i = 1000;<br>​			// 以下这5次访问都是访问的同一块内存空间。（这样使用变量之后，内存空间就得到了复用。）<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​	<br>​			// 以下程序表示访问的是字符i以及字符串i，以下的这两个i和以上的i变量没有任何关系。<br>​			System.out.println(‘i’);<br>​			System.out.println(“i”);<br>​	<br>​		}<br>​	<br>​	}<br>​	<br>​	文档注释<br>​	/**<br>​	* 变量测试类2<br>​	* @author 杜聚宾<br>​	* @version 1.5<br>​	* @since 1.0<br>​	<em>/<br>​	/</em><br>​		什么是变量？<br>​			变量其实就是内存当中存储数据的最基本的单元。<br>​			变量就是一个存储数据的盒子。<br>​	<br>​		在java语言当中任何数据都是有数据类型的，其中整数型是：int<br>​			没有为什么，java中规定的，整数型就是：int<br>​		<br>​		当然，在java中除了数据类型int之外，还有其它的类型，例如带小数的：double等。。。<br>​	<br>​		数据类型有什么用呢？<br>​			记住：不同的数据类型，在内存中分配的空间大小不同。<br>​			也就是说，Java虚拟机到底给这个数据分配多大的空间，主要还是看这个变量的数据类型。<br>​			根据不同的类型，分配不同大小的空间。<br>​		<br>​		对于int这种整数类型，JVM会自动给int分配4个字节大小的空间。<br>​	<br>        1个字节=8个比特位<br>        1个比特位就是一个1或0. 注意：比特位是二进制位。<br>        int是占用多少个二进制位？1个int占有32个二进制位（bit位）</p>
-<pre><code>    int i = 1; 实际上在内存中是这样表示的：
-        00000000 00000000 00000000 00000001
-    int i = 2;
-        00000000 00000000 00000000 00000010
-    
-    二进制位就是：满2进1位（0 1 10 11 100 101....）
+<p>​			<br>​			// 以下虽然都是10，但是这3个10占用三块不同的内存空间。<br>​			System.out.println(10);<br>​			System.out.println(10);<br>​			System.out.println(10); // 只有“字面量”机制的话，是远远不够的，因为只有字面量内存是无法重复利用的。<br>​	<br>​			// 定义/声明一个变量，起名i<br>​			int i = 1000;<br>​			// 以下这5次访问都是访问的同一块内存空间。（这样使用变量之后，内存空间就得到了复用。）<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​			System.out.println(i);<br>​	<br>​			// 以下程序表示访问的是字符i以及字符串i，以下的这两个i和以上的i变量没有任何关系。<br>​			System.out.println(‘i’);<br>​			System.out.println(“i”);<br>​	<br>​		}<br>​	<br>​	}<br>​	<br>​	文档注释<br>​	/**<br>​	* 变量测试类2<br>​	* @author 杜聚宾<br>​	* @version 1.5<br>​	* @since 1.0<br>​	<em>/<br>​	/</em><br>​		什么是变量？<br>​			变量其实就是内存当中存储数据的最基本的单元。<br>​			变量就是一个存储数据的盒子。<br>​	<br>​		在java语言当中任何数据都是有数据类型的，其中整数型是：int<br>​			没有为什么，java中规定的，整数型就是：int<br>​		<br>​		当然，在java中除了数据类型int之外，还有其它的类型，例如带小数的：double等。。。<br>​	<br>​		数据类型有什么用呢？<br>​			记住：不同的数据类型，在内存中分配的空间大小不同。<br>​			也就是说，Java虚拟机到底给这个数据分配多大的空间，主要还是看这个变量的数据类型。<br>​			根据不同的类型，分配不同大小的空间。<br>​		<br>​		对于int这种整数类型，JVM会自动给int分配4个字节大小的空间。<br>​	<br>​		1个字节=8个比特位<br>​		1个比特位就是一个1或0. 注意：比特位是二进制位。<br>​		int是占用多少个二进制位？1个int占有32个二进制位（bit位）<br>​	<br>        int i = 1; 实际上在内存中是这样表示的：<br>            00000000 00000000 00000000 00000001<br>        int i = 2;<br>            00000000 00000000 00000000 00000010</p>
+<pre><code>    二进制位就是：满2进1位（0 1 10 11 100 101....）
     十进制位就是：满10进1位（1 2 3 4 5 6 7 8 9 10）
 
     对于一个变量来说，包括三要素：
